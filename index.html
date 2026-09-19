@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -39,10 +39,12 @@
       <a href="#experiencia" class="nav-link">Experiencia</a>
       <a href="#reliabilit-ia" class="nav-link">RELIABILIT-IA</a>
       <a href="#educacion" class="nav-link">Educación</a>
+      <a href="#testimonios" class="nav-link">Testimonios</a>
       <a href="#contacto" class="nav-link">Contacto</a>
       <a href="assets/CV_Miguel_Cayllahua_2026.pdf" class="btn btn-sm btn-primary" download>Descargar CV</a>
     </div>
   </div>
+  <div class="scroll-progress"><div class="scroll-progress-fill" id="scrollProgress"></div></div>
 </nav>
 
 <main id="top">
@@ -512,6 +514,64 @@
     </div>
   </section>
 
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="section testimonials-section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="tag-label">Recomendaciones</span>
+        <h2 class="section-title">Lo que dicen colegas y jefes directos</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testi-card reveal">
+          <svg class="testi-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 7h4v6a4 4 0 0 1-4 4H6v-2h1a2 2 0 0 0 2-2H7V7Zm8 0h4v6a4 4 0 0 1-4 4h-1v-2h1a2 2 0 0 0 2-2h-2V7Z"/></svg>
+          <p class="testi-text">"As a Reliability Engineer, I received valuable support from Miguel Angel, he showed consistently strong technical skills. I confidently recommend him for any role related to maintenance planning, operational reliability, or technical coordination."</p>
+          <div class="testi-author">
+            <span class="testi-avatar">RV</span>
+            <div><strong>Raúl Vassallo</strong><span>Ingeniero de Confiabilidad</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal delay-1">
+          <svg class="testi-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 7h4v6a4 4 0 0 1-4 4H6v-2h1a2 2 0 0 0 2-2H7V7Zm8 0h4v6a4 4 0 0 1-4 4h-1v-2h1a2 2 0 0 0 2-2h-2V7Z"/></svg>
+          <p class="testi-text">"Tuve la oportunidad de trabajar con Miguel, quien durante todo este tiempo demostró un excelente dominio en el análisis de indicadores de confiabilidad de activos y una sólida capacidad para interpretar tendencias de desempeño y fallas. Destacó por su enfoque analítico y por brindar soluciones innovadoras que integran tecnologías digitales y modelos estadísticos predictivos."</p>
+          <div class="testi-author">
+            <span class="testi-avatar">JN</span>
+            <div><strong>Jairo Navarro</strong><span>Data Scientist | BI | AI &amp; ML Developer</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal delay-2">
+          <svg class="testi-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 7h4v6a4 4 0 0 1-4 4H6v-2h1a2 2 0 0 0 2-2H7V7Zm8 0h4v6a4 4 0 0 1-4 4h-1v-2h1a2 2 0 0 0 2-2h-2V7Z"/></svg>
+          <p class="testi-text">"Miguel Angel es un profesional muy competente con enfoque a resultado del negocio mediante la gestión de indicadores, además cuenta con habilidad de comunicar e interactuar a todo nivel para el logro de los objetivos y satisfacción del cliente interno."</p>
+          <div class="testi-author">
+            <span class="testi-avatar">CH</span>
+            <div><strong>Carlos Herrera Ochoa</strong><span>Jefe de Mantenimiento General, Textil San Ramón S.A. · supervisor directo</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <svg class="testi-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 7h4v6a4 4 0 0 1-4 4H6v-2h1a2 2 0 0 0 2-2H7V7Zm8 0h4v6a4 4 0 0 1-4 4h-1v-2h1a2 2 0 0 0 2-2h-2V7Z"/></svg>
+          <p class="testi-text">"Miguel es un profesional altamente comprometido con su trabajo, es bastante organizado y siempre aporta ideas innovadoras. Constantemente se capacita y mantiene actualizado en las nuevas tecnologías de la industria, buscando la mejora de procesos, ahorro de costos y aumentar la confiabilidad de los equipos."</p>
+          <div class="testi-author">
+            <span class="testi-avatar">JB</span>
+            <div><strong>Juan Alessandro Bautista</strong><span>Maintenance | Reliability | Digital Manufacturing</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal delay-1">
+          <svg class="testi-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 7h4v6a4 4 0 0 1-4 4H6v-2h1a2 2 0 0 0 2-2H7V7Zm8 0h4v6a4 4 0 0 1-4 4h-1v-2h1a2 2 0 0 0 2-2h-2V7Z"/></svg>
+          <p class="testi-text">"Excelente profesional, dedicado y comprometido con su trabajo."</p>
+          <div class="testi-author">
+            <span class="testi-avatar">NF</span>
+            <div><strong>Nelson Franco Saavedra</strong><span>Gestión de Mantenimiento</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACTO -->
   <section id="contacto" class="section contact-section">
     <div class="section-inner">
@@ -536,6 +596,10 @@
   </div>
 </footer>
 
-<script src="script.js?v=3"></script>
+<a href="https://wa.me/51997610310" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.3 1.18-1.8 1.24-.46.06-1.02.09-1.65-.1-.38-.12-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.18-1.07-1.42-1.07-2.72 0-1.3.68-1.93.92-2.2.24-.26.53-.33.7-.33h.5c.16 0 .38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.07.15-.18.65-.76.83-1.02.18-.26.35-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.16 1.27Z"/></svg>
+</a>
+
+<script src="script.js?v=4"></script>
 </body>
 </html>

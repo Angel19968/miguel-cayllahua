@@ -1,11 +1,17 @@
 // ---------- Year ----------
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// ---------- Navbar scroll state ----------
+// ---------- Navbar scroll state + scroll progress ----------
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
+const scrollProgress = document.getElementById('scrollProgress');
+function updateScrollUI() {
   navbar.classList.toggle('scrolled', window.scrollY > 10);
-}, { passive: true });
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = docHeight > 0 ? Math.min(100, Math.max(0, (window.scrollY / docHeight) * 100)) : 0;
+  scrollProgress.style.width = pct + '%';
+}
+window.addEventListener('scroll', updateScrollUI, { passive: true });
+updateScrollUI();
 
 // ---------- Mobile nav toggle ----------
 const navToggle = document.getElementById('navToggle');
