@@ -133,8 +133,17 @@ svg{fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stro
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
 .hero-desc{color:var(--text-dim); font-size:1.02rem; max-width:56ch; margin-bottom:32px;}
-.hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:26px;}
-.hero-socials{display:flex; gap:12px; margin-bottom:44px;}
+.hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:22px;}
+.avail-badge{
+  display:inline-flex; align-items:center; gap:9px; font-size:.82rem; font-weight:600; color:#86efac;
+  background:rgba(52,211,153,.08); border:1px solid rgba(52,211,153,.22); border-radius:999px;
+  padding:9px 16px; margin-bottom:22px;
+}
+.avail-dot{width:8px; height:8px; border-radius:50%; background:var(--green); flex-shrink:0; box-shadow:0 0 0 0 rgba(52,211,153,.6); animation:pulseDot 2s infinite;}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(52,211,153,.55);}70%{box-shadow:0 0 0 8px rgba(52,211,153,0);}100%{box-shadow:0 0 0 0 rgba(52,211,153,0);}}
+.hero-socials-row{display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:44px;}
+.hero-socials{display:flex; gap:12px;}
+.hero-socials-note{font-size:.78rem; color:var(--text-faint);}
 .social-ico{
   width:40px; height:40px; border-radius:11px; border:1px solid var(--border);
   display:flex; align-items:center; justify-content:center; color:var(--text-dim);
@@ -298,6 +307,7 @@ svg{fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stro
   content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--grad);
 }
 .reliabilit-copy p{color:var(--text-dim); margin:16px 0 28px; font-size:.98rem; max-width:52ch;}
+.reliabilit-note{color:var(--text-faint); font-size:.8rem; max-width:48ch; margin-top:16px; line-height:1.6;}
 .reliabilit-stats{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:30px;}
 .reliabilit-stats strong{display:block; font-size:1.5rem; font-weight:800; color:var(--text); font-variant-numeric:tabular-nums;}
 .reliabilit-stats span{font-size:.72rem; color:var(--text-faint);}
